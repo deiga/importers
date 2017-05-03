@@ -32,6 +32,8 @@ module.exports.convert = function (rawData) {
     if (typeof arg === 'object' && arg.op === ';') {
       commands.push(currentCommand);
       currentCommand = [];
+    } else if (typeof arg === 'object' && arg.op === 'glob') {
+      currentCommand.push(arg.pattern);
     } else if (typeof arg === 'object') {
       // Not sure what this could be, so just skip it
     } else {
