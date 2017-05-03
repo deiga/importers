@@ -162,6 +162,7 @@ function importArgs (args) {
     })
   } else if (textBody) {
     body.text = textBody;
+    body.mimeType = mimeType || '';
   } else if (formDataParams.length) {
     body.params = formDataParams;
     body.mimeType = mimeType || 'multipart/form-data';

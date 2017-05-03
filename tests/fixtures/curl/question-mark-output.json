@@ -12,6 +12,7 @@
       "name": "http://192.168.1.1:9200/executions/_search?pretty",
       "method": "POST",
       "body": {
+        "mimeType": "",
         "text": "{\"query\":{\"match_all\":{}}}"
       },
       "parameters": [],
