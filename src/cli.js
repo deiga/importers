@@ -2,7 +2,7 @@
 
 const program = require('commander');
 const path = require('path');
-const importers = require('./importers');
+const importers = require('./import');
 const fs = require('fs');
 const {version} = require('../package.json');
 
